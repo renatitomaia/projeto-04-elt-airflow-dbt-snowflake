@@ -1,0 +1,6 @@
+id_transacao,data_venda,id_cliente,produto,categoria,qtd,valor_unit
+101,2026-10-01,1,Licença Software,B2B,10,150.00
+102,2026-10-02,2,Consultoria AWS,Serviços,5,300.00
+103,2026-10-02,1,Suporte Premium,B2B,10,50.00
+104,2026-10-03,3,Licença Software,B2B,2,150.00
+105,2026-10-04,2,Treinamento AI,Serviços,1,1000.00

@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: fct_vendas
+    description: "Tabela Fato contendo a receita total calculada."
+    columns:
+      - name: id_transacao
+        tests:
+          - unique
+          - not_null
+      - name: receita_total
+        tests:
+          - not_null

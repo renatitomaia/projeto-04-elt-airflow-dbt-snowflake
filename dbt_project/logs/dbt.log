@@ -1,0 +1,917 @@
+[0m15:11:22.086132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a8f13eb0410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a8f139c1580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a8f11ba11c0>]}
+[0m15:11:22.088897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6457f9c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa643ea2000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6435483b0>]}
+
+
+============================== 15:11:22.095745 | c05e1d82-ceb3-4db2-8e3d-ef58081b2ad4 ==============================
+[0m15:11:22.095745 [info ] [MainThread]: Running with dbt=1.12.5
+[0m15:11:22.097396 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt seed --profiles-dir .', 'log_cache_events': 'False', 'printer_width': '80', 'introspect': 'True', 'fail_fast': 'False', 'warn_error': 'None', 'empty': 'False', 'use_colors': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'target_path': 'None', 'profiles_dir': '.', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'partial_parse': 'True', 'no_print': 'None', 'log_path': '/opt/airflow/dbt_project/logs', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'log_format': 'default', 'debug': 'False'}
+[0m15:11:22.098658 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'write_json': 'True', 'fail_fast': 'False', 'maximum_seed_size_mib': '1', 'warn_error': 'None', 'log_format': 'default', 'quiet': 'False', 'invocation_command': 'dbt seed --profiles-dir .', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'empty': 'False', 'log_path': '/opt/airflow/dbt_project/logs', 'target_path': 'None', 'hints_enabled': 'True', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'cache_selected_only': 'False', 'introspect': 'True', 'printer_width': '80', 'use_colors': 'True', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'debug': 'False', 'partial_parse': 'True', 'profiles_dir': '.'}
+[0m15:11:23.153061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c05e1d82-ceb3-4db2-8e3d-ef58081b2ad4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a8f0fd7c0e0>]}
+[0m15:11:23.170273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'aae5e111-88b6-4306-84d5-2b4792a60cb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa64095b200>]}
+[0m15:11:23.230101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c05e1d82-ceb3-4db2-8e3d-ef58081b2ad4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a8f0f6c6900>]}
+[0m15:11:23.234203 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m15:11:23.248499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'aae5e111-88b6-4306-84d5-2b4792a60cb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6438946e0>]}
+[0m15:11:23.253037 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m15:11:23.327645 [debug] [MainThread]: checksum: 7517a55e4511f61a5ca19c2a4ead25ad90da44586756927bffd5d734e07bd638, vars: {}, profile: dbt_project, target: dev, version: 1.12.5
+[0m15:11:23.335974 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:11:23.338677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c05e1d82-ceb3-4db2-8e3d-ef58081b2ad4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a8f0f1d7a70>]}
+[0m15:11:23.347900 [debug] [MainThread]: checksum: 7517a55e4511f61a5ca19c2a4ead25ad90da44586756927bffd5d734e07bd638, vars: {}, profile: dbt_project, target: dev, version: 1.12.5
+[0m15:11:23.355141 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:11:23.357385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'aae5e111-88b6-4306-84d5-2b4792a60cb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa640a21af0>]}
+[0m15:11:25.485056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'aae5e111-88b6-4306-84d5-2b4792a60cb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa63e9d3e30>]}
+[0m15:11:25.508110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c05e1d82-ceb3-4db2-8e3d-ef58081b2ad4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a8f0d37e240>]}
+[0m15:11:25.781517 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m15:11:25.803601 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m15:11:25.806814 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m15:11:25.835117 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m15:11:25.863472 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m15:11:25.875763 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m15:11:25.893263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'aae5e111-88b6-4306-84d5-2b4792a60cb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa640432ae0>]}
+[0m15:11:25.895318 [info ] [MainThread]: Found 2 models, 1 seed, 3 data tests, 505 macros
+[0m15:11:25.897691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aae5e111-88b6-4306-84d5-2b4792a60cb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa640344ef0>]}
+[0m15:11:25.901035 [info ] [MainThread]: 
+ending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c05e1d82-ceb3-4db2-8e3d-ef58081b2ad4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a8f0d45ebd0>]}
+[0m15:11:25.903847 [info ] [MainThread]: Found 2 models, 1 seed, 3 data tests, 505 macros
+[0m15:11:25.906196 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c05e1d82-ceb3-4db2-8e3d-ef58081b2ad4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a8f0d3c1dc0>]}
+[0m15:11:25.907919 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:11:25.910462 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ELT_DATABASE'
+[0m15:11:25.911675 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:11:25.913675 [info ] [MainThread]: 
+[0m15:11:25.915325 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:11:25.921103 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ELT_DATABASE'
+[0m15:11:25.930000 [debug] [ThreadPool]: Using snowflake connection "list_ELT_DATABASE"
+[0m15:11:25.933924 [debug] [ThreadPool]: On list_ELT_DATABASE: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ELT_DATABASE"} */
+show terse schemas in database ELT_DATABASE
+    limit 10000
+[0m15:11:25.936253 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:11:25.942081 [debug] [ThreadPool]: Using snowflake connection "list_ELT_DATABASE"
+[0m15:11:25.945132 [debug] [ThreadPool]: On list_ELT_DATABASE: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ELT_DATABASE"} */
+show terse schemas in database ELT_DATABASE
+    limit 10000
+[0m15:11:25.948784 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:11:29.938138 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 4.002 seconds
+[0m15:11:29.943705 [debug] [ThreadPool]: On list_ELT_DATABASE: Close
+[0m15:11:30.149520 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 4.201 seconds
+[0m15:11:30.156455 [debug] [ThreadPool]: On list_ELT_DATABASE: Close
+[0m15:11:30.242864 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ELT_DATABASE, now create_ELT_DATABASE_ANALYTICS_raw)
+[0m15:11:30.247309 [debug] [ThreadPool]: Creating schema "database: "ELT_DATABASE"
+schema: "ANALYTICS_raw"
+"
+[0m15:11:30.257208 [debug] [ThreadPool]: Using snowflake connection "create_ELT_DATABASE_ANALYTICS_raw"
+[0m15:11:30.260622 [debug] [ThreadPool]: On create_ELT_DATABASE_ANALYTICS_raw: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "create_ELT_DATABASE_ANALYTICS_raw"} */
+create schema if not exists ELT_DATABASE.ANALYTICS_raw
+[0m15:11:30.263805 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:11:30.456359 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ELT_DATABASE, now create_ELT_DATABASE_ANALYTICS_raw)
+[0m15:11:30.461288 [debug] [ThreadPool]: Creating schema "database: "ELT_DATABASE"
+schema: "ANALYTICS_raw"
+"
+[0m15:11:30.479418 [debug] [ThreadPool]: Using snowflake connection "create_ELT_DATABASE_ANALYTICS_raw"
+[0m15:11:30.486460 [debug] [ThreadPool]: On create_ELT_DATABASE_ANALYTICS_raw: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "create_ELT_DATABASE_ANALYTICS_raw"} */
+create schema if not exists ELT_DATABASE.ANALYTICS_raw
+[0m15:11:30.492005 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:11:31.150344 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.886 seconds
+[0m15:11:31.156048 [debug] [ThreadPool]: On create_ELT_DATABASE_ANALYTICS_raw: Close
+[0m15:11:31.363852 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.872 seconds
+[0m15:11:31.371359 [debug] [ThreadPool]: On create_ELT_DATABASE_ANALYTICS_raw: Close
+[0m15:11:31.476739 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_ELT_DATABASE_ANALYTICS_raw, now list_ELT_DATABASE_ANALYTICS_raw)
+[0m15:11:31.478197 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ELT_DATABASE_ANALYTICS'
+[0m15:11:31.496348 [debug] [ThreadPool]: Using snowflake connection "list_ELT_DATABASE_ANALYTICS_raw"
+[0m15:11:31.500903 [debug] [ThreadPool]: Using snowflake connection "list_ELT_DATABASE_ANALYTICS"
+[0m15:11:31.504778 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS_raw: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ELT_DATABASE_ANALYTICS_raw"} */
+show objects in ELT_DATABASE.ANALYTICS_raw limit 10000
+[0m15:11:31.509142 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ELT_DATABASE_ANALYTICS"} */
+show objects in ELT_DATABASE.ANALYTICS limit 10000
+[0m15:11:31.512890 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:11:31.516679 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:11:31.676788 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_ELT_DATABASE_ANALYTICS_raw, now list_ELT_DATABASE_ANALYTICS_raw)
+[0m15:11:31.678446 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ELT_DATABASE_ANALYTICS'
+[0m15:11:31.697021 [debug] [ThreadPool]: Using snowflake connection "list_ELT_DATABASE_ANALYTICS_raw"
+[0m15:11:31.700661 [debug] [ThreadPool]: Using snowflake connection "list_ELT_DATABASE_ANALYTICS"
+[0m15:11:31.704267 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS_raw: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ELT_DATABASE_ANALYTICS_raw"} */
+show objects in ELT_DATABASE.ANALYTICS_raw limit 10000
+[0m15:11:31.707703 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ELT_DATABASE_ANALYTICS"} */
+show objects in ELT_DATABASE.ANALYTICS limit 10000
+[0m15:11:31.710786 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:11:31.713586 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:11:32.436734 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.920 seconds
+[0m15:11:32.444764 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS: Close
+[0m15:11:32.470939 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.958 seconds
+[0m15:11:32.479109 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS_raw: Close
+[0m15:11:32.649050 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.938 seconds
+[0m15:11:32.655960 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS_raw: Close
+[0m15:11:32.728122 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.014 seconds
+[0m15:11:32.746095 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS: Close
+[0m15:11:32.788096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aae5e111-88b6-4306-84d5-2b4792a60cb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa63eb1d040>]}
+[0m15:11:32.806539 [debug] [Thread-1 (]: Began running node seed.elt_snowflake_project.raw_vendas
+[0m15:11:32.816675 [info ] [Thread-1 (]: 1 of 1 START seed file ANALYTICS_raw.raw_vendas ................................ [RUN]
+[0m15:11:32.821250 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ELT_DATABASE_ANALYTICS, now seed.elt_snowflake_project.raw_vendas)
+[0m15:11:32.825251 [debug] [Thread-1 (]: Began compiling node seed.elt_snowflake_project.raw_vendas
+[0m15:11:32.828451 [debug] [Thread-1 (]: Began executing node seed.elt_snowflake_project.raw_vendas
+[0m15:11:32.912108 [debug] [Thread-1 (]: Using snowflake connection "seed.elt_snowflake_project.raw_vendas"
+[0m15:11:32.915816 [debug] [Thread-1 (]: On seed.elt_snowflake_project.raw_vendas: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "seed.elt_snowflake_project.raw_vendas"} */
+create table ELT_DATABASE.ANALYTICS_raw.raw_vendas (id_transacao integer,data_venda date,id_cliente integer,produto text,categoria text,qtd integer,valor_unit integer)
+[0m15:11:32.919189 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:11:33.050527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c05e1d82-ceb3-4db2-8e3d-ef58081b2ad4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a8f0d37cb00>]}
+[0m15:11:33.068041 [debug] [Thread-1 (]: Began running node seed.elt_snowflake_project.raw_vendas
+[0m15:11:33.072449 [info ] [Thread-1 (]: 1 of 1 START seed file ANALYTICS_raw.raw_vendas ................................ [RUN]
+[0m15:11:33.076441 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ELT_DATABASE_ANALYTICS, now seed.elt_snowflake_project.raw_vendas)
+[0m15:11:33.079778 [debug] [Thread-1 (]: Began compiling node seed.elt_snowflake_project.raw_vendas
+[0m15:11:33.083187 [debug] [Thread-1 (]: Began executing node seed.elt_snowflake_project.raw_vendas
+[0m15:11:33.165302 [debug] [Thread-1 (]: Using snowflake connection "seed.elt_snowflake_project.raw_vendas"
+[0m15:11:33.170046 [debug] [Thread-1 (]: On seed.elt_snowflake_project.raw_vendas: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "seed.elt_snowflake_project.raw_vendas"} */
+create table ELT_DATABASE.ANALYTICS_raw.raw_vendas (id_transacao integer,data_venda date,id_cliente integer,produto text,categoria text,qtd integer,valor_unit integer)
+[0m15:11:33.174595 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:11:34.084655 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.165 seconds
+[0m15:11:34.116282 [debug] [Thread-1 (]: Using snowflake connection "seed.elt_snowflake_project.raw_vendas"
+[0m15:11:34.118964 [debug] [Thread-1 (]: On seed.elt_snowflake_project.raw_vendas: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "seed.elt_snowflake_project.raw_vendas"} */
+BEGIN
+[0m15:11:34.321986 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01c79def-0208-e91e-0011-a36e0003909e
+[0m15:11:34.327900 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002002 (42710): SQL compilation error:
+Object 'RAW_VENDAS' already exists.
+[0m15:11:34.333135 [debug] [Thread-1 (]: On seed.elt_snowflake_project.raw_vendas: Close
+[0m15:11:34.354301 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.220 seconds
+[0m15:11:34.360871 [debug] [Thread-1 (]: Using snowflake connection "seed.elt_snowflake_project.raw_vendas"
+[0m15:11:34.365738 [debug] [Thread-1 (]: On seed.elt_snowflake_project.raw_vendas: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "seed.elt_snowflake_project.raw_vendas"} */
+insert into ELT_DATABASE.ANALYTICS_raw.raw_vendas (id_transacao, data_venda, id_cliente, produto, categoria, qtd, valor_unit) values
+            (%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s)...
+[0m15:11:34.646023 [debug] [Thread-1 (]: Database Error in seed raw_vendas (seeds/raw_vendas.csv)
+  002002 (42710): SQL compilation error:
+  Object 'RAW_VENDAS' already exists.
+[0m15:11:34.651863 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c05e1d82-ceb3-4db2-8e3d-ef58081b2ad4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a8f073a50a0>]}
+[0m15:11:34.654927 [error] [Thread-1 (]: 1 of 1 ERROR loading seed file ANALYTICS_raw.raw_vendas ........................ [[31mERROR[0m in 1.57s]
+[0m15:11:34.658271 [debug] [Thread-1 (]: Finished running node seed.elt_snowflake_project.raw_vendas
+[0m15:11:34.661267 [debug] [Thread-7 (]: Marking all children of 'seed.elt_snowflake_project.raw_vendas' to be skipped because of status 'error'.  Reason: Database Error in seed raw_vendas (seeds/raw_vendas.csv)
+  002002 (42710): SQL compilation error:
+  Object 'RAW_VENDAS' already exists..
+[0m15:11:34.667719 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:11:34.670629 [debug] [MainThread]: Connection 'list_ELT_DATABASE_ANALYTICS_raw' was properly closed.
+[0m15:11:34.673007 [debug] [MainThread]: Connection 'seed.elt_snowflake_project.raw_vendas' was properly closed.
+[0m15:11:34.675221 [info ] [MainThread]: 
+[0m15:11:34.677868 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 8.76 seconds (8.76s).
+[0m15:11:34.680951 [debug] [MainThread]: Command end result
+[0m15:11:34.822426 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m15:11:34.836361 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m15:11:34.849160 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m15:11:34.875103 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt_project/target/run_results.json
+[0m15:11:34.880089 [info ] [MainThread]: 
+[0m15:11:34.884428 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:11:34.887633 [info ] [MainThread]: 
+[0m15:11:34.890972 [error] [MainThread]: [[31mERROR[0m]: in seed raw_vendas (seeds/raw_vendas.csv)
+[0m15:11:34.893944 [error] [MainThread]:   Database Error in seed raw_vendas (seeds/raw_vendas.csv)
+  002002 (42710): SQL compilation error:
+  Object 'RAW_VENDAS' already exists.
+[0m15:11:34.897117 [info ] [MainThread]: 
+[0m15:11:34.900320 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m15:11:34.904678 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 12.921505, "process_in_blocks": "0", "process_kernel_time": 1.994834, "process_mem_max_rss": "183512", "process_out_blocks": "0", "process_user_time": 6.965899}
+[0m15:11:34.907990 [debug] [MainThread]: Command `dbt seed` failed at 15:11:34.907726 after 12.93 seconds
+[0m15:11:34.910622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a8f11ab9880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a8f12096b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a8f12094e60>]}
+[0m15:11:34.913584 [debug] [MainThread]: Flushing usage events
+[0m15:11:35.441514 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:11:35.582590 [debug] [Thread-1 (]: SQL status: SUCCESS 5 in 1.213 seconds
+[0m15:11:35.592453 [debug] [Thread-1 (]: Using snowflake connection "seed.elt_snowflake_project.raw_vendas"
+[0m15:11:35.602100 [debug] [Thread-1 (]: On seed.elt_snowflake_project.raw_vendas: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "seed.elt_snowflake_project.raw_vendas"} */
+COMMIT
+[0m15:11:36.073630 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.464 seconds
+[0m15:11:36.097704 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.elt_snowflake_project.raw_vendas"
+[0m15:11:36.234276 [debug] [Thread-1 (]: On seed.elt_snowflake_project.raw_vendas: Close
+[0m15:11:36.540250 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'aae5e111-88b6-4306-84d5-2b4792a60cb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa640a20140>]}
+[0m15:11:36.544455 [info ] [Thread-1 (]: 1 of 1 OK loaded seed file ANALYTICS_raw.raw_vendas ............................ [[32mINSERT 5[0m in 3.72s]
+[0m15:11:36.549802 [debug] [Thread-1 (]: Finished running node seed.elt_snowflake_project.raw_vendas
+[0m15:11:36.555724 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:11:36.558182 [debug] [MainThread]: Connection 'list_ELT_DATABASE_ANALYTICS_raw' was properly closed.
+[0m15:11:36.559956 [debug] [MainThread]: Connection 'seed.elt_snowflake_project.raw_vendas' was properly closed.
+[0m15:11:36.561826 [info ] [MainThread]: 
+[0m15:11:36.563742 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 10.65 seconds (10.65s).
+[0m15:11:36.568103 [debug] [MainThread]: Command end result
+[0m15:11:36.793981 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m15:11:36.815302 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m15:11:36.833612 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m15:11:36.864015 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt_project/target/run_results.json
+[0m15:11:36.867909 [info ] [MainThread]: 
+[0m15:11:36.872185 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:11:36.875341 [info ] [MainThread]: 
+[0m15:11:36.878626 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m15:11:36.882593 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 14.899576, "process_in_blocks": "0", "process_kernel_time": 2.155841, "process_mem_max_rss": "183628", "process_out_blocks": "0", "process_user_time": 6.984606}
+[0m15:11:36.887664 [debug] [MainThread]: Command `dbt seed` succeeded at 15:11:36.887322 after 14.90 seconds
+[0m15:11:36.890312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa643276f30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa640344ef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6431b6900>]}
+[0m15:11:36.893777 [debug] [MainThread]: Flushing usage events
+[0m15:11:37.329299 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:11:42.119671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2203ba7b00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2203ba7a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2204595d90>]}
+
+
+============================== 15:11:42.129685 | 112c5d65-a864-47fb-9768-9368a04a45ef ==============================
+[0m15:11:42.129685 [info ] [MainThread]: Running with dbt=1.12.5
+[0m15:11:42.133095 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'target_path': 'None', 'quiet': 'False', 'profiles_dir': '.', 'hints_enabled': 'True', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'warn_error': 'None', 'log_path': '/opt/airflow/dbt_project/logs', 'printer_width': '80', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'use_colors': 'True', 'empty': 'False', 'partial_parse': 'True', 'version_check': 'True', 'debug': 'False', 'log_format': 'default', 'static_parser': 'True', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'maximum_seed_size_mib': '1'}
+[0m15:11:42.866637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '112c5d65-a864-47fb-9768-9368a04a45ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2201d06720>]}
+[0m15:11:42.953464 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '112c5d65-a864-47fb-9768-9368a04a45ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c22025df2c0>]}
+[0m15:11:42.960073 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m15:11:43.044255 [debug] [MainThread]: checksum: 7517a55e4511f61a5ca19c2a4ead25ad90da44586756927bffd5d734e07bd638, vars: {}, profile: dbt_project, target: dev, version: 1.12.5
+[0m15:11:43.374828 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:11:43.379284 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m15:11:43.383522 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:11:43.403151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '112c5d65-a864-47fb-9768-9368a04a45ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c22039a6810>]}
+[0m15:11:43.770861 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m15:11:43.785307 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m15:11:43.826509 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m15:11:43.871214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '112c5d65-a864-47fb-9768-9368a04a45ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2201bb52e0>]}
+[0m15:11:43.876650 [info ] [MainThread]: Found 2 models, 1 seed, 3 data tests, 505 macros
+[0m15:11:43.881340 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '112c5d65-a864-47fb-9768-9368a04a45ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2201d07e90>]}
+[0m15:11:43.889674 [info ] [MainThread]: 
+[0m15:11:43.895610 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:11:43.899767 [info ] [MainThread]: 
+[0m15:11:43.904176 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:11:43.918366 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ELT_DATABASE'
+[0m15:11:43.946126 [debug] [ThreadPool]: Using snowflake connection "list_ELT_DATABASE"
+[0m15:11:43.949765 [debug] [ThreadPool]: On list_ELT_DATABASE: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ELT_DATABASE"} */
+show terse schemas in database ELT_DATABASE
+    limit 10000
+[0m15:11:43.952906 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:11:45.349057 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.396 seconds
+[0m15:11:45.359343 [debug] [ThreadPool]: On list_ELT_DATABASE: Close
+[0m15:11:45.684989 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ELT_DATABASE, now list_ELT_DATABASE_ANALYTICS)
+[0m15:11:45.686115 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ELT_DATABASE_ANALYTICS_raw'
+[0m15:11:45.701970 [debug] [ThreadPool]: Using snowflake connection "list_ELT_DATABASE_ANALYTICS"
+[0m15:11:45.711569 [debug] [ThreadPool]: Using snowflake connection "list_ELT_DATABASE_ANALYTICS_raw"
+[0m15:11:45.724014 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ELT_DATABASE_ANALYTICS"} */
+show objects in ELT_DATABASE.ANALYTICS limit 10000
+[0m15:11:45.728770 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS_raw: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ELT_DATABASE_ANALYTICS_raw"} */
+show objects in ELT_DATABASE.ANALYTICS_raw limit 10000
+[0m15:11:45.736752 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:11:45.742206 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:11:46.707816 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.974 seconds
+[0m15:11:46.716665 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS: Close
+[0m15:11:46.833002 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.094 seconds
+[0m15:11:46.841880 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS_raw: Close
+[0m15:11:47.386459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '112c5d65-a864-47fb-9768-9368a04a45ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c22068c9850>]}
+[0m15:11:47.402672 [debug] [Thread-1 (]: Began running node model.elt_snowflake_project.stg_vendas
+[0m15:11:47.411724 [info ] [Thread-1 (]: 1 of 2 START sql view model ANALYTICS.stg_vendas ............................... [RUN]
+[0m15:11:47.418519 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ELT_DATABASE_ANALYTICS, now model.elt_snowflake_project.stg_vendas)
+[0m15:11:47.422936 [debug] [Thread-1 (]: Began compiling node model.elt_snowflake_project.stg_vendas
+[0m15:11:47.437999 [debug] [Thread-1 (]: Writing injected SQL for node "model.elt_snowflake_project.stg_vendas"
+[0m15:11:47.493582 [debug] [Thread-1 (]: Began executing node model.elt_snowflake_project.stg_vendas
+[0m15:11:47.559027 [debug] [Thread-1 (]: Writing runtime sql for node "model.elt_snowflake_project.stg_vendas"
+[0m15:11:47.622211 [debug] [Thread-1 (]: Using snowflake connection "model.elt_snowflake_project.stg_vendas"
+[0m15:11:47.626983 [debug] [Thread-1 (]: On model.elt_snowflake_project.stg_vendas: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.elt_snowflake_project.stg_vendas"} */
+create or replace   view ELT_DATABASE.ANALYTICS.stg_vendas
+  
+   as (
+    
+
+WITH raw_data AS (
+    SELECT * FROM ELT_DATABASE.ANALYTICS_raw.raw_vendas
+)
+
+SELECT
+    CAST(id_transacao AS INT) AS id_transacao,
+    CAST(data_venda AS DATE) AS data_venda,
+    CAST(id_cliente AS INT) AS id_cliente,
+    UPPER(produto) AS nome_produto,
+    categoria,
+    CAST(qtd AS INT) AS quantidade_comprada,
+    CAST(valor_unit AS DECIMAL(10,2)) AS valor_unitario
+FROM raw_data
+WHERE valor_unit > 0
+  );
+[0m15:11:47.630917 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:11:48.746434 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.115 seconds
+[0m15:11:48.784878 [debug] [Thread-1 (]: On model.elt_snowflake_project.stg_vendas: Close
+[0m15:11:49.096530 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '112c5d65-a864-47fb-9768-9368a04a45ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2201fac080>]}
+[0m15:11:49.101284 [info ] [Thread-1 (]: 1 of 2 OK created sql view model ANALYTICS.stg_vendas .......................... [[32mSUCCESS 1[0m in 1.68s]
+[0m15:11:49.107245 [debug] [Thread-1 (]: Finished running node model.elt_snowflake_project.stg_vendas
+[0m15:11:49.111419 [debug] [Thread-3 (]: Began running node model.elt_snowflake_project.fct_vendas
+[0m15:11:49.114505 [info ] [Thread-3 (]: 2 of 2 START sql table model ANALYTICS.fct_vendas .............................. [RUN]
+[0m15:11:49.118698 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.elt_snowflake_project.fct_vendas'
+[0m15:11:49.121397 [debug] [Thread-3 (]: Began compiling node model.elt_snowflake_project.fct_vendas
+[0m15:11:49.127578 [debug] [Thread-3 (]: Writing injected SQL for node "model.elt_snowflake_project.fct_vendas"
+[0m15:11:49.157143 [debug] [Thread-3 (]: Began executing node model.elt_snowflake_project.fct_vendas
+[0m15:11:49.192204 [debug] [Thread-3 (]: Writing runtime sql for node "model.elt_snowflake_project.fct_vendas"
+[0m15:11:49.233254 [debug] [Thread-3 (]: Using snowflake connection "model.elt_snowflake_project.fct_vendas"
+[0m15:11:49.236591 [debug] [Thread-3 (]: On model.elt_snowflake_project.fct_vendas: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.elt_snowflake_project.fct_vendas"} */
+create or replace transient table ELT_DATABASE.ANALYTICS.fct_vendas
+         as
+        (
+
+WITH staging AS (
+    SELECT * FROM ELT_DATABASE.ANALYTICS.stg_vendas
+)
+
+SELECT
+    id_transacao,
+    data_venda,
+    id_cliente,
+    categoria,
+    quantidade_comprada,
+    valor_unitario,
+    (quantidade_comprada * valor_unitario) AS receita_total
+FROM staging
+        );
+[0m15:11:49.239236 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:11:51.099834 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.860 seconds
+[0m15:11:51.104710 [debug] [Thread-3 (]: On model.elt_snowflake_project.fct_vendas: Close
+[0m15:11:51.403517 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '112c5d65-a864-47fb-9768-9368a04a45ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2200969340>]}
+[0m15:11:51.408498 [info ] [Thread-3 (]: 2 of 2 OK created sql table model ANALYTICS.fct_vendas ......................... [[32mSUCCESS 1[0m in 2.28s]
+[0m15:11:51.415481 [debug] [Thread-3 (]: Finished running node model.elt_snowflake_project.fct_vendas
+[0m15:11:51.421445 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:11:51.424199 [debug] [MainThread]: Connection 'model.elt_snowflake_project.stg_vendas' was properly closed.
+[0m15:11:51.427083 [debug] [MainThread]: Connection 'list_ELT_DATABASE_ANALYTICS_raw' was properly closed.
+[0m15:11:51.430318 [debug] [MainThread]: Connection 'model.elt_snowflake_project.fct_vendas' was properly closed.
+[0m15:11:51.434135 [info ] [MainThread]: 
+[0m15:11:51.437915 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 7.53 seconds (7.53s).
+[0m15:11:51.442295 [debug] [MainThread]: Command end result
+[0m15:11:51.576424 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m15:11:51.592890 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m15:11:51.607846 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m15:11:51.629685 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt_project/target/run_results.json
+[0m15:11:51.632248 [info ] [MainThread]: 
+[0m15:11:51.636647 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:11:51.639259 [info ] [MainThread]: 
+[0m15:11:51.641732 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=2
+[0m15:11:51.645468 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 9.692578, "process_in_blocks": "0", "process_kernel_time": 0.537493, "process_mem_max_rss": "176120", "process_out_blocks": "0", "process_user_time": 4.849476}
+[0m15:11:51.648571 [debug] [MainThread]: Command `dbt run` succeeded at 15:11:51.648271 after 9.70 seconds
+[0m15:11:51.652142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2205ea5eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2203bd3860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c22046e97f0>]}
+[0m15:11:51.654874 [debug] [MainThread]: Flushing usage events
+[0m15:11:52.116785 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:11:56.952768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7802e88b3770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7802e9685640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7802ebc33380>]}
+
+
+============================== 15:11:56.960474 | 4997cc7c-022f-43ba-bdb9-52d1341c930a ==============================
+[0m15:11:56.960474 [info ] [MainThread]: Running with dbt=1.12.5
+[0m15:11:56.966475 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'printer_width': '80', 'write_json': 'True', 'use_colors': 'True', 'target_path': 'None', 'cache_selected_only': 'False', 'debug': 'False', 'invocation_command': 'dbt test --profiles-dir .', 'log_cache_events': 'False', 'warn_error': 'None', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'log_path': '/opt/airflow/dbt_project/logs', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'partial_parse': 'True', 'fail_fast': 'False', 'empty': 'None', 'profiles_dir': '.', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'hints_enabled': 'True'}
+[0m15:11:57.706715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4997cc7c-022f-43ba-bdb9-52d1341c930a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7802e99a8bf0>]}
+[0m15:11:57.799982 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4997cc7c-022f-43ba-bdb9-52d1341c930a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7802e6b33e00>]}
+[0m15:11:57.805609 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m15:11:57.892185 [debug] [MainThread]: checksum: 7517a55e4511f61a5ca19c2a4ead25ad90da44586756927bffd5d734e07bd638, vars: {}, profile: dbt_project, target: dev, version: 1.12.5
+[0m15:11:58.188161 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:11:58.191829 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m15:11:58.195151 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:11:58.212773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4997cc7c-022f-43ba-bdb9-52d1341c930a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7802e6fba0f0>]}
+[0m15:11:58.502338 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m15:11:58.515609 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m15:11:58.542034 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m15:11:58.602369 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4997cc7c-022f-43ba-bdb9-52d1341c930a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7802e633f080>]}
+[0m15:11:58.608152 [info ] [MainThread]: Found 2 models, 1 seed, 3 data tests, 505 macros
+[0m15:11:58.613612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4997cc7c-022f-43ba-bdb9-52d1341c930a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7802e6a17fb0>]}
+[0m15:11:58.621898 [info ] [MainThread]: 
+[0m15:11:58.627927 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:11:58.632196 [info ] [MainThread]: 
+[0m15:11:58.636360 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:11:58.649405 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ELT_DATABASE_ANALYTICS_raw'
+[0m15:11:58.651082 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ELT_DATABASE_ANALYTICS'
+[0m15:11:58.700069 [debug] [ThreadPool]: Using snowflake connection "list_ELT_DATABASE_ANALYTICS_raw"
+[0m15:11:58.701854 [debug] [ThreadPool]: Using snowflake connection "list_ELT_DATABASE_ANALYTICS"
+[0m15:11:58.705926 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS_raw: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ELT_DATABASE_ANALYTICS_raw"} */
+show objects in ELT_DATABASE.ANALYTICS_raw limit 10000
+[0m15:11:58.711206 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ELT_DATABASE_ANALYTICS"} */
+show objects in ELT_DATABASE.ANALYTICS limit 10000
+[0m15:11:58.716264 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:11:58.721519 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:11:59.985157 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.269 seconds
+[0m15:11:59.998567 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS_raw: Close
+[0m15:12:00.004829 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.283 seconds
+[0m15:12:00.030748 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS: Close
+[0m15:12:00.334898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4997cc7c-022f-43ba-bdb9-52d1341c930a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7802e6c8f020>]}
+[0m15:12:00.346846 [debug] [Thread-1 (]: Began running node test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08
+[0m15:12:00.347989 [debug] [Thread-2 (]: Began running node test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508
+[0m15:12:00.348999 [debug] [Thread-3 (]: Began running node test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304
+[0m15:12:00.351344 [info ] [Thread-1 (]: 1 of 3 START test not_null_fct_vendas_id_transacao ............................. [RUN]
+[0m15:12:00.354809 [info ] [Thread-2 (]: 2 of 3 START test not_null_fct_vendas_receita_total ............................ [RUN]
+[0m15:12:00.358347 [info ] [Thread-3 (]: 3 of 3 START test unique_fct_vendas_id_transacao ............................... [RUN]
+[0m15:12:00.361622 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ELT_DATABASE_ANALYTICS, now test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08)
+[0m15:12:00.364630 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_ELT_DATABASE_ANALYTICS_raw, now test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508)
+[0m15:12:00.369147 [debug] [Thread-3 (]: Acquiring new snowflake connection 'test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304'
+[0m15:12:00.372070 [debug] [Thread-1 (]: Began compiling node test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08
+[0m15:12:00.375070 [debug] [Thread-2 (]: Began compiling node test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508
+[0m15:12:00.377886 [debug] [Thread-3 (]: Began compiling node test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304
+[0m15:12:00.422448 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08"
+[0m15:12:00.429838 [debug] [Thread-2 (]: Writing injected SQL for node "test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508"
+[0m15:12:00.451373 [debug] [Thread-3 (]: Writing injected SQL for node "test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304"
+[0m15:12:00.483874 [debug] [Thread-1 (]: Began executing node test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08
+[0m15:12:00.491591 [debug] [Thread-3 (]: Began executing node test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304
+[0m15:12:00.520985 [debug] [Thread-2 (]: Began executing node test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508
+[0m15:12:00.594301 [debug] [Thread-2 (]: Writing runtime sql for node "test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508"
+[0m15:12:00.596133 [debug] [Thread-3 (]: Writing runtime sql for node "test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304"
+[0m15:12:00.597394 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08"
+[0m15:12:00.622297 [debug] [Thread-2 (]: Using snowflake connection "test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508"
+[0m15:12:00.627169 [debug] [Thread-2 (]: On test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select receita_total
+from ELT_DATABASE.ANALYTICS.fct_vendas
+where receita_total is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:12:00.629034 [debug] [Thread-1 (]: Using snowflake connection "test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08"
+[0m15:12:00.632971 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:12:00.637811 [debug] [Thread-1 (]: On test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id_transacao
+from ELT_DATABASE.ANALYTICS.fct_vendas
+where id_transacao is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:12:00.639934 [debug] [Thread-3 (]: Using snowflake connection "test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304"
+[0m15:12:00.651448 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:12:00.656470 [debug] [Thread-3 (]: On test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    id_transacao as unique_field,
+    count(*) as n_records
+
+from ELT_DATABASE.ANALYTICS.fct_vendas
+where id_transacao is not null
+group by id_transacao
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:12:00.701727 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:12:01.941157 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.290 seconds
+[0m15:12:01.965433 [debug] [Thread-1 (]: On test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08: Close
+[0m15:12:02.014173 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.381 seconds
+[0m15:12:02.024214 [debug] [Thread-2 (]: On test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508: Close
+[0m15:12:02.042036 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.340 seconds
+[0m15:12:02.047875 [debug] [Thread-3 (]: On test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304: Close
+[0m15:12:02.261646 [info ] [Thread-1 (]: 1 of 3 PASS not_null_fct_vendas_id_transacao ................................... [[32mPASS[0m in 1.90s]
+[0m15:12:02.266122 [debug] [Thread-1 (]: Finished running node test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08
+[0m15:12:02.348128 [info ] [Thread-2 (]: 2 of 3 PASS not_null_fct_vendas_receita_total .................................. [[32mPASS[0m in 1.98s]
+[0m15:12:02.354670 [debug] [Thread-2 (]: Finished running node test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508
+[0m15:12:02.360972 [info ] [Thread-3 (]: 3 of 3 PASS unique_fct_vendas_id_transacao ..................................... [[32mPASS[0m in 1.99s]
+[0m15:12:02.368271 [debug] [Thread-3 (]: Finished running node test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304
+[0m15:12:02.379140 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:12:02.383876 [debug] [MainThread]: Connection 'test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508' was properly closed.
+[0m15:12:02.389054 [debug] [MainThread]: Connection 'test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08' was properly closed.
+[0m15:12:02.393648 [debug] [MainThread]: Connection 'test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304' was properly closed.
+[0m15:12:02.398432 [info ] [MainThread]: 
+[0m15:12:02.408694 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 3.76 seconds (3.76s).
+[0m15:12:02.415027 [debug] [MainThread]: Command end result
+[0m15:12:02.599581 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m15:12:02.620828 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m15:12:02.642279 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m15:12:02.673075 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt_project/target/run_results.json
+[0m15:12:02.676875 [info ] [MainThread]: 
+[0m15:12:02.680771 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:12:02.691978 [info ] [MainThread]: 
+[0m15:12:02.695934 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m15:12:02.701317 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 5.8613243, "process_in_blocks": "0", "process_kernel_time": 0.569737, "process_mem_max_rss": "177588", "process_out_blocks": "0", "process_user_time": 4.91098}
+[0m15:12:02.706459 [debug] [MainThread]: Command `dbt test` succeeded at 15:12:02.706190 after 5.87 seconds
+[0m15:12:02.710077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7802e88b3770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7802e9af7e00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7802e6503e30>]}
+[0m15:12:02.714224 [debug] [MainThread]: Flushing usage events
+[0m15:12:03.161967 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:12:40.443529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x710f94a19d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x710f94a7bf20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x710f94a79d30>]}
+
+
+============================== 15:12:40.456991 | 64fdbc3e-7d96-4780-8447-34e2b52dfd62 ==============================
+[0m15:12:40.456991 [info ] [MainThread]: Running with dbt=1.12.5
+[0m15:12:40.460997 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt seed --profiles-dir .', 'write_json': 'True', 'printer_width': '80', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'maximum_seed_size_mib': '1', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'introspect': 'True', 'fail_fast': 'False', 'debug': 'False', 'profiles_dir': '.', 'target_path': 'None', 'log_format': 'default', 'partial_parse': 'True', 'log_path': '/opt/airflow/dbt_project/logs', 'version_check': 'True', 'empty': 'False', 'quiet': 'False', 'log_cache_events': 'False'}
+[0m15:12:41.125306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '64fdbc3e-7d96-4780-8447-34e2b52dfd62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x710f921fe300>]}
+[0m15:12:41.215780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '64fdbc3e-7d96-4780-8447-34e2b52dfd62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x710f925e9a00>]}
+[0m15:12:41.219667 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m15:12:41.332219 [debug] [MainThread]: checksum: 7517a55e4511f61a5ca19c2a4ead25ad90da44586756927bffd5d734e07bd638, vars: {}, profile: dbt_project, target: dev, version: 1.12.5
+[0m15:12:41.801241 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:12:41.805249 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m15:12:41.809100 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:12:41.829825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '64fdbc3e-7d96-4780-8447-34e2b52dfd62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x710f96c295b0>]}
+[0m15:12:42.088235 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m15:12:42.115477 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m15:12:42.165107 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m15:12:42.212875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '64fdbc3e-7d96-4780-8447-34e2b52dfd62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x710f91d196a0>]}
+[0m15:12:42.215967 [info ] [MainThread]: Found 2 models, 1 seed, 3 data tests, 505 macros
+[0m15:12:42.219159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '64fdbc3e-7d96-4780-8447-34e2b52dfd62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x710f91e70d70>]}
+[0m15:12:42.225075 [info ] [MainThread]: 
+[0m15:12:42.228586 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:12:42.231350 [info ] [MainThread]: 
+[0m15:12:42.235006 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:12:42.240528 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ELT_DATABASE'
+[0m15:12:42.267355 [debug] [ThreadPool]: Using snowflake connection "list_ELT_DATABASE"
+[0m15:12:42.269716 [debug] [ThreadPool]: On list_ELT_DATABASE: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ELT_DATABASE"} */
+show terse schemas in database ELT_DATABASE
+    limit 10000
+[0m15:12:42.272085 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:43.675181 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.403 seconds
+[0m15:12:43.681687 [debug] [ThreadPool]: On list_ELT_DATABASE: Close
+[0m15:12:44.004625 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ELT_DATABASE, now list_ELT_DATABASE_ANALYTICS_raw)
+[0m15:12:44.005820 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ELT_DATABASE_ANALYTICS'
+[0m15:12:44.022301 [debug] [ThreadPool]: Using snowflake connection "list_ELT_DATABASE_ANALYTICS_raw"
+[0m15:12:44.026142 [debug] [ThreadPool]: Using snowflake connection "list_ELT_DATABASE_ANALYTICS"
+[0m15:12:44.029918 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS_raw: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ELT_DATABASE_ANALYTICS_raw"} */
+show objects in ELT_DATABASE.ANALYTICS_raw limit 10000
+[0m15:12:44.033663 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ELT_DATABASE_ANALYTICS"} */
+show objects in ELT_DATABASE.ANALYTICS limit 10000
+[0m15:12:44.036748 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:12:44.039781 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:45.018537 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.979 seconds
+[0m15:12:45.024706 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS: Close
+[0m15:12:45.270306 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.233 seconds
+[0m15:12:45.279270 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS_raw: Close
+[0m15:12:45.579462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '64fdbc3e-7d96-4780-8447-34e2b52dfd62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x710f819ebec0>]}
+[0m15:12:45.597284 [debug] [Thread-1 (]: Began running node seed.elt_snowflake_project.raw_vendas
+[0m15:12:45.602589 [info ] [Thread-1 (]: 1 of 1 START seed file ANALYTICS_raw.raw_vendas ................................ [RUN]
+[0m15:12:45.607046 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ELT_DATABASE_ANALYTICS_raw, now seed.elt_snowflake_project.raw_vendas)
+[0m15:12:45.610840 [debug] [Thread-1 (]: Began compiling node seed.elt_snowflake_project.raw_vendas
+[0m15:12:45.615562 [debug] [Thread-1 (]: Began executing node seed.elt_snowflake_project.raw_vendas
+[0m15:12:45.709751 [debug] [Thread-1 (]: Using snowflake connection "seed.elt_snowflake_project.raw_vendas"
+[0m15:12:45.715628 [debug] [Thread-1 (]: On seed.elt_snowflake_project.raw_vendas: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "seed.elt_snowflake_project.raw_vendas"} */
+BEGIN
+[0m15:12:45.720318 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:12:46.754951 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.037 seconds
+[0m15:12:46.760215 [debug] [Thread-1 (]: Using snowflake connection "seed.elt_snowflake_project.raw_vendas"
+[0m15:12:46.767935 [debug] [Thread-1 (]: On seed.elt_snowflake_project.raw_vendas: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "seed.elt_snowflake_project.raw_vendas"} */
+truncate table "ELT_DATABASE"."ANALYTICS_RAW"."RAW_VENDAS"
+  ;
+[0m15:12:47.099250 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.327 seconds
+[0m15:12:47.104446 [debug] [Thread-1 (]: Using snowflake connection "seed.elt_snowflake_project.raw_vendas"
+[0m15:12:47.109820 [debug] [Thread-1 (]: On seed.elt_snowflake_project.raw_vendas: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "seed.elt_snowflake_project.raw_vendas"} */
+COMMIT
+[0m15:12:47.698334 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.581 seconds
+[0m15:12:47.757504 [debug] [Thread-1 (]: Using snowflake connection "seed.elt_snowflake_project.raw_vendas"
+[0m15:12:47.763410 [debug] [Thread-1 (]: On seed.elt_snowflake_project.raw_vendas: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "seed.elt_snowflake_project.raw_vendas"} */
+BEGIN
+[0m15:12:47.982531 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.217 seconds
+[0m15:12:47.986783 [debug] [Thread-1 (]: Using snowflake connection "seed.elt_snowflake_project.raw_vendas"
+[0m15:12:47.989782 [debug] [Thread-1 (]: On seed.elt_snowflake_project.raw_vendas: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "seed.elt_snowflake_project.raw_vendas"} */
+insert into ELT_DATABASE.ANALYTICS_raw.raw_vendas (id_transacao, data_venda, id_cliente, produto, categoria, qtd, valor_unit) values
+            (%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s)...
+[0m15:12:48.491911 [debug] [Thread-1 (]: SQL status: SUCCESS 5 in 0.498 seconds
+[0m15:12:48.497006 [debug] [Thread-1 (]: Using snowflake connection "seed.elt_snowflake_project.raw_vendas"
+[0m15:12:48.500024 [debug] [Thread-1 (]: On seed.elt_snowflake_project.raw_vendas: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "seed.elt_snowflake_project.raw_vendas"} */
+COMMIT
+[0m15:12:48.952888 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.450 seconds
+[0m15:12:48.965692 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.elt_snowflake_project.raw_vendas"
+[0m15:12:49.024844 [debug] [Thread-1 (]: On seed.elt_snowflake_project.raw_vendas: Close
+[0m15:12:49.352065 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '64fdbc3e-7d96-4780-8447-34e2b52dfd62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x710f9515a3f0>]}
+[0m15:12:49.356181 [info ] [Thread-1 (]: 1 of 1 OK loaded seed file ANALYTICS_raw.raw_vendas ............................ [[32mINSERT 5[0m in 3.74s]
+[0m15:12:49.362376 [debug] [Thread-1 (]: Finished running node seed.elt_snowflake_project.raw_vendas
+[0m15:12:49.368018 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:12:49.370549 [debug] [MainThread]: Connection 'seed.elt_snowflake_project.raw_vendas' was properly closed.
+[0m15:12:49.373107 [debug] [MainThread]: Connection 'list_ELT_DATABASE_ANALYTICS' was properly closed.
+[0m15:12:49.378334 [info ] [MainThread]: 
+[0m15:12:49.382491 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 7.14 seconds (7.14s).
+[0m15:12:49.387378 [debug] [MainThread]: Command end result
+[0m15:12:49.714953 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m15:12:49.737292 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m15:12:49.763444 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m15:12:49.798885 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt_project/target/run_results.json
+[0m15:12:49.803372 [info ] [MainThread]: 
+[0m15:12:49.808019 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:12:49.813540 [info ] [MainThread]: 
+[0m15:12:49.818095 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m15:12:49.823722 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 9.50623, "process_in_blocks": "0", "process_kernel_time": 0.529428, "process_mem_max_rss": "174352", "process_out_blocks": "0", "process_user_time": 4.736778}
+[0m15:12:49.829947 [debug] [MainThread]: Command `dbt seed` succeeded at 15:12:49.829262 after 9.51 seconds
+[0m15:12:49.834841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x710f94f5dee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x710f91e70b00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x710f91baacf0>]}
+[0m15:12:49.838865 [debug] [MainThread]: Flushing usage events
+[0m15:12:50.297842 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:12:55.223142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d415bbb00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d417f9220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d44c41a00>]}
+
+
+============================== 15:12:55.238819 | 078c5d79-b5f9-4d21-ae4a-8197111e807e ==============================
+[0m15:12:55.238819 [info ] [MainThread]: Running with dbt=1.12.5
+[0m15:12:55.246761 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'introspect': 'True', 'static_parser': 'True', 'log_path': '/opt/airflow/dbt_project/logs', 'cache_selected_only': 'False', 'profiles_dir': '.', 'hints_enabled': 'True', 'printer_width': '80', 'use_experimental_parser': 'False', 'log_format': 'default', 'version_check': 'True', 'no_print': 'None', 'quiet': 'False', 'use_colors': 'True', 'target_path': 'None', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'write_json': 'True', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'empty': 'False', 'partial_parse': 'True', 'debug': 'False', 'fail_fast': 'False'}
+[0m15:12:55.814736 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '078c5d79-b5f9-4d21-ae4a-8197111e807e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d41a7dac0>]}
+[0m15:12:55.917129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '078c5d79-b5f9-4d21-ae4a-8197111e807e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d3ee64f80>]}
+[0m15:12:55.929463 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m15:12:56.043270 [debug] [MainThread]: checksum: 7517a55e4511f61a5ca19c2a4ead25ad90da44586756927bffd5d734e07bd638, vars: {}, profile: dbt_project, target: dev, version: 1.12.5
+[0m15:12:56.518867 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:12:56.524114 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m15:12:56.529479 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:12:56.551869 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '078c5d79-b5f9-4d21-ae4a-8197111e807e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d40a38230>]}
+[0m15:12:56.918182 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m15:12:56.943198 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m15:12:57.001375 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m15:12:57.049161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '078c5d79-b5f9-4d21-ae4a-8197111e807e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d3ea11040>]}
+[0m15:12:57.054430 [info ] [MainThread]: Found 2 models, 1 seed, 3 data tests, 505 macros
+[0m15:12:57.058223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '078c5d79-b5f9-4d21-ae4a-8197111e807e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d3e80c1d0>]}
+[0m15:12:57.065996 [info ] [MainThread]: 
+[0m15:12:57.071961 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:12:57.078289 [info ] [MainThread]: 
+[0m15:12:57.082305 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:12:57.111367 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ELT_DATABASE'
+[0m15:12:57.159974 [debug] [ThreadPool]: Using snowflake connection "list_ELT_DATABASE"
+[0m15:12:57.164016 [debug] [ThreadPool]: On list_ELT_DATABASE: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ELT_DATABASE"} */
+show terse schemas in database ELT_DATABASE
+    limit 10000
+[0m15:12:57.167157 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:58.486049 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.319 seconds
+[0m15:12:58.494041 [debug] [ThreadPool]: On list_ELT_DATABASE: Close
+[0m15:12:58.812202 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ELT_DATABASE, now list_ELT_DATABASE_ANALYTICS)
+[0m15:12:58.814366 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ELT_DATABASE_ANALYTICS_raw'
+[0m15:12:58.836815 [debug] [ThreadPool]: Using snowflake connection "list_ELT_DATABASE_ANALYTICS"
+[0m15:12:58.840690 [debug] [ThreadPool]: Using snowflake connection "list_ELT_DATABASE_ANALYTICS_raw"
+[0m15:12:58.844996 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ELT_DATABASE_ANALYTICS"} */
+show objects in ELT_DATABASE.ANALYTICS limit 10000
+[0m15:12:58.855159 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS_raw: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ELT_DATABASE_ANALYTICS_raw"} */
+show objects in ELT_DATABASE.ANALYTICS_raw limit 10000
+[0m15:12:58.860870 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:12:58.866109 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:59.883646 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.023 seconds
+[0m15:12:59.892162 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS: Close
+[0m15:12:59.917957 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.052 seconds
+[0m15:12:59.925576 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS_raw: Close
+[0m15:13:00.241777 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '078c5d79-b5f9-4d21-ae4a-8197111e807e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d2e4cf4d0>]}
+[0m15:13:00.253575 [debug] [Thread-1 (]: Began running node model.elt_snowflake_project.stg_vendas
+[0m15:13:00.258013 [info ] [Thread-1 (]: 1 of 2 START sql view model ANALYTICS.stg_vendas ............................... [RUN]
+[0m15:13:00.261888 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ELT_DATABASE_ANALYTICS, now model.elt_snowflake_project.stg_vendas)
+[0m15:13:00.265626 [debug] [Thread-1 (]: Began compiling node model.elt_snowflake_project.stg_vendas
+[0m15:13:00.284750 [debug] [Thread-1 (]: Writing injected SQL for node "model.elt_snowflake_project.stg_vendas"
+[0m15:13:00.318131 [debug] [Thread-1 (]: Began executing node model.elt_snowflake_project.stg_vendas
+[0m15:13:00.371254 [debug] [Thread-1 (]: Writing runtime sql for node "model.elt_snowflake_project.stg_vendas"
+[0m15:13:00.397856 [debug] [Thread-1 (]: Using snowflake connection "model.elt_snowflake_project.stg_vendas"
+[0m15:13:00.401679 [debug] [Thread-1 (]: On model.elt_snowflake_project.stg_vendas: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.elt_snowflake_project.stg_vendas"} */
+create or replace   view ELT_DATABASE.ANALYTICS.stg_vendas
+  
+   as (
+    
+
+WITH raw_data AS (
+    SELECT * FROM ELT_DATABASE.ANALYTICS_raw.raw_vendas
+)
+
+SELECT
+    CAST(id_transacao AS INT) AS id_transacao,
+    CAST(data_venda AS DATE) AS data_venda,
+    CAST(id_cliente AS INT) AS id_cliente,
+    UPPER(produto) AS nome_produto,
+    categoria,
+    CAST(qtd AS INT) AS quantidade_comprada,
+    CAST(valor_unit AS DECIMAL(10,2)) AS valor_unitario
+FROM raw_data
+WHERE valor_unit > 0
+  );
+[0m15:13:00.405179 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:13:01.718366 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.313 seconds
+[0m15:13:01.769412 [debug] [Thread-1 (]: On model.elt_snowflake_project.stg_vendas: Close
+[0m15:13:02.099655 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '078c5d79-b5f9-4d21-ae4a-8197111e807e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d3ede00b0>]}
+[0m15:13:02.105544 [info ] [Thread-1 (]: 1 of 2 OK created sql view model ANALYTICS.stg_vendas .......................... [[32mSUCCESS 1[0m in 1.84s]
+[0m15:13:02.109829 [debug] [Thread-1 (]: Finished running node model.elt_snowflake_project.stg_vendas
+[0m15:13:02.115944 [debug] [Thread-3 (]: Began running node model.elt_snowflake_project.fct_vendas
+[0m15:13:02.120616 [info ] [Thread-3 (]: 2 of 2 START sql table model ANALYTICS.fct_vendas .............................. [RUN]
+[0m15:13:02.124869 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.elt_snowflake_project.fct_vendas'
+[0m15:13:02.129053 [debug] [Thread-3 (]: Began compiling node model.elt_snowflake_project.fct_vendas
+[0m15:13:02.138773 [debug] [Thread-3 (]: Writing injected SQL for node "model.elt_snowflake_project.fct_vendas"
+[0m15:13:02.169382 [debug] [Thread-3 (]: Began executing node model.elt_snowflake_project.fct_vendas
+[0m15:13:02.199497 [debug] [Thread-3 (]: Writing runtime sql for node "model.elt_snowflake_project.fct_vendas"
+[0m15:13:02.224858 [debug] [Thread-3 (]: Using snowflake connection "model.elt_snowflake_project.fct_vendas"
+[0m15:13:02.228826 [debug] [Thread-3 (]: On model.elt_snowflake_project.fct_vendas: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.elt_snowflake_project.fct_vendas"} */
+create or replace transient table ELT_DATABASE.ANALYTICS.fct_vendas
+         as
+        (
+
+WITH staging AS (
+    SELECT * FROM ELT_DATABASE.ANALYTICS.stg_vendas
+)
+
+SELECT
+    id_transacao,
+    data_venda,
+    id_cliente,
+    categoria,
+    quantidade_comprada,
+    valor_unitario,
+    (quantidade_comprada * valor_unitario) AS receita_total
+FROM staging
+        );
+[0m15:13:02.232146 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:13:04.013731 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.782 seconds
+[0m15:13:04.020193 [debug] [Thread-3 (]: On model.elt_snowflake_project.fct_vendas: Close
+[0m15:13:04.348039 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '078c5d79-b5f9-4d21-ae4a-8197111e807e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d3d7bb890>]}
+[0m15:13:04.355247 [info ] [Thread-3 (]: 2 of 2 OK created sql table model ANALYTICS.fct_vendas ......................... [[32mSUCCESS 1[0m in 2.22s]
+[0m15:13:04.361619 [debug] [Thread-3 (]: Finished running node model.elt_snowflake_project.fct_vendas
+[0m15:13:04.371837 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:13:04.377125 [debug] [MainThread]: Connection 'model.elt_snowflake_project.stg_vendas' was properly closed.
+[0m15:13:04.381975 [debug] [MainThread]: Connection 'list_ELT_DATABASE_ANALYTICS_raw' was properly closed.
+[0m15:13:04.386436 [debug] [MainThread]: Connection 'model.elt_snowflake_project.fct_vendas' was properly closed.
+[0m15:13:04.391170 [info ] [MainThread]: 
+[0m15:13:04.396323 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 7.31 seconds (7.31s).
+[0m15:13:04.402373 [debug] [MainThread]: Command end result
+[0m15:13:04.593936 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m15:13:04.609881 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m15:13:04.630025 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m15:13:04.656265 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt_project/target/run_results.json
+[0m15:13:04.659008 [info ] [MainThread]: 
+[0m15:13:04.662040 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:13:04.665475 [info ] [MainThread]: 
+[0m15:13:04.668612 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=2
+[0m15:13:04.673388 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 9.616295, "process_in_blocks": "0", "process_kernel_time": 0.485117, "process_mem_max_rss": "175656", "process_out_blocks": "0", "process_user_time": 4.806706}
+[0m15:13:04.677255 [debug] [MainThread]: Command `dbt run` succeeded at 15:13:04.676942 after 9.62 seconds
+[0m15:13:04.680459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d415bbb00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d3e80c1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6d4152a1b0>]}
+[0m15:13:04.683474 [debug] [MainThread]: Flushing usage events
+[0m15:13:05.175068 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:13:09.786273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4bbb7a8620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4bbde7cc20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4bbb93fbc0>]}
+
+
+============================== 15:13:09.798336 | ed7cf619-2e9f-47db-b0a8-09ba2985f45f ==============================
+[0m15:13:09.798336 [info ] [MainThread]: Running with dbt=1.12.5
+[0m15:13:09.802108 [debug] [MainThread]: running dbt with arguments {'hints_enabled': 'True', 'log_cache_events': 'False', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'debug': 'False', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'empty': 'None', 'invocation_command': 'dbt test --profiles-dir .', 'profiles_dir': '.', 'warn_error': 'None', 'write_json': 'True', 'static_parser': 'True', 'no_print': 'None', 'log_format': 'default', 'indirect_selection': 'eager', 'printer_width': '80', 'use_colors': 'True', 'log_path': '/opt/airflow/dbt_project/logs', 'fail_fast': 'False', 'quiet': 'False', 'cache_selected_only': 'False'}
+[0m15:13:10.635130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ed7cf619-2e9f-47db-b0a8-09ba2985f45f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4bb90c31d0>]}
+[0m15:13:10.725272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ed7cf619-2e9f-47db-b0a8-09ba2985f45f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4bb8fcdcd0>]}
+[0m15:13:10.730770 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m15:13:10.812670 [debug] [MainThread]: checksum: 7517a55e4511f61a5ca19c2a4ead25ad90da44586756927bffd5d734e07bd638, vars: {}, profile: dbt_project, target: dev, version: 1.12.5
+[0m15:13:11.252279 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:13:11.257129 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m15:13:11.261706 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:13:11.286073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ed7cf619-2e9f-47db-b0a8-09ba2985f45f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4bb91bb890>]}
+[0m15:13:11.568191 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m15:13:11.584064 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m15:13:11.630412 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m15:13:11.709932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ed7cf619-2e9f-47db-b0a8-09ba2985f45f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4bb8ae75f0>]}
+[0m15:13:11.715374 [info ] [MainThread]: Found 2 models, 1 seed, 3 data tests, 505 macros
+[0m15:13:11.721010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ed7cf619-2e9f-47db-b0a8-09ba2985f45f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4bb9772cc0>]}
+[0m15:13:11.730110 [info ] [MainThread]: 
+[0m15:13:11.736589 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:13:11.742144 [info ] [MainThread]: 
+[0m15:13:11.748916 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:13:11.765121 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ELT_DATABASE_ANALYTICS_raw'
+[0m15:13:11.767171 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ELT_DATABASE_ANALYTICS'
+[0m15:13:11.821759 [debug] [ThreadPool]: Using snowflake connection "list_ELT_DATABASE_ANALYTICS_raw"
+[0m15:13:11.823019 [debug] [ThreadPool]: Using snowflake connection "list_ELT_DATABASE_ANALYTICS"
+[0m15:13:11.826504 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS_raw: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ELT_DATABASE_ANALYTICS_raw"} */
+show objects in ELT_DATABASE.ANALYTICS_raw limit 10000
+[0m15:13:11.832303 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ELT_DATABASE_ANALYTICS"} */
+show objects in ELT_DATABASE.ANALYTICS limit 10000
+[0m15:13:11.837117 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:13:11.845969 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:13:13.550167 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.704 seconds
+[0m15:13:13.552546 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.715 seconds
+[0m15:13:13.560182 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS: Close
+[0m15:13:13.567084 [debug] [ThreadPool]: On list_ELT_DATABASE_ANALYTICS_raw: Close
+[0m15:13:13.880473 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ed7cf619-2e9f-47db-b0a8-09ba2985f45f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4bb8befa10>]}
+[0m15:13:13.894670 [debug] [Thread-1 (]: Began running node test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08
+[0m15:13:13.896955 [debug] [Thread-2 (]: Began running node test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508
+[0m15:13:13.898312 [debug] [Thread-3 (]: Began running node test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304
+[0m15:13:13.902602 [info ] [Thread-1 (]: 1 of 3 START test not_null_fct_vendas_id_transacao ............................. [RUN]
+[0m15:13:13.907568 [info ] [Thread-2 (]: 2 of 3 START test not_null_fct_vendas_receita_total ............................ [RUN]
+[0m15:13:13.913196 [info ] [Thread-3 (]: 3 of 3 START test unique_fct_vendas_id_transacao ............................... [RUN]
+[0m15:13:13.917669 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ELT_DATABASE_ANALYTICS_raw, now test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08)
+[0m15:13:13.921724 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_ELT_DATABASE_ANALYTICS, now test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508)
+[0m15:13:13.926641 [debug] [Thread-3 (]: Acquiring new snowflake connection 'test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304'
+[0m15:13:13.930905 [debug] [Thread-1 (]: Began compiling node test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08
+[0m15:13:13.934450 [debug] [Thread-2 (]: Began compiling node test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508
+[0m15:13:13.937724 [debug] [Thread-3 (]: Began compiling node test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304
+[0m15:13:13.999208 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08"
+[0m15:13:14.000555 [debug] [Thread-2 (]: Writing injected SQL for node "test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508"
+[0m15:13:14.014196 [debug] [Thread-3 (]: Writing injected SQL for node "test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304"
+[0m15:13:14.033821 [debug] [Thread-1 (]: Began executing node test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08
+[0m15:13:14.036107 [debug] [Thread-2 (]: Began executing node test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508
+[0m15:13:14.037586 [debug] [Thread-3 (]: Began executing node test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304
+[0m15:13:14.093193 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08"
+[0m15:13:14.094530 [debug] [Thread-2 (]: Writing runtime sql for node "test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508"
+[0m15:13:14.098374 [debug] [Thread-3 (]: Writing runtime sql for node "test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304"
+[0m15:13:14.115789 [debug] [Thread-1 (]: Using snowflake connection "test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08"
+[0m15:13:14.118353 [debug] [Thread-3 (]: Using snowflake connection "test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304"
+[0m15:13:14.119229 [debug] [Thread-1 (]: On test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id_transacao
+from ELT_DATABASE.ANALYTICS.fct_vendas
+where id_transacao is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:13:14.120660 [debug] [Thread-2 (]: Using snowflake connection "test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508"
+[0m15:13:14.123360 [debug] [Thread-3 (]: On test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    id_transacao as unique_field,
+    count(*) as n_records
+
+from ELT_DATABASE.ANALYTICS.fct_vendas
+where id_transacao is not null
+group by id_transacao
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:13:14.127423 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:13:14.130526 [debug] [Thread-2 (]: On test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select receita_total
+from ELT_DATABASE.ANALYTICS.fct_vendas
+where receita_total is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:13:14.133714 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:13:14.143088 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:13:15.294982 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.167 seconds
+[0m15:13:15.322504 [debug] [Thread-1 (]: On test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08: Close
+[0m15:13:15.324478 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.191 seconds
+[0m15:13:15.332073 [debug] [Thread-3 (]: On test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304: Close
+[0m15:13:15.646961 [info ] [Thread-1 (]: 1 of 3 PASS not_null_fct_vendas_id_transacao ................................... [[32mPASS[0m in 1.73s]
+[0m15:13:15.649632 [info ] [Thread-3 (]: 3 of 3 PASS unique_fct_vendas_id_transacao ..................................... [[32mPASS[0m in 1.72s]
+[0m15:13:15.655191 [debug] [Thread-1 (]: Finished running node test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08
+[0m15:13:15.659560 [debug] [Thread-3 (]: Finished running node test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304
+[0m15:13:15.681104 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.538 seconds
+[0m15:13:15.687716 [debug] [Thread-2 (]: On test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508: Close
+[0m15:13:15.985608 [info ] [Thread-2 (]: 2 of 3 PASS not_null_fct_vendas_receita_total .................................. [[32mPASS[0m in 2.06s]
+[0m15:13:15.990184 [debug] [Thread-2 (]: Finished running node test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508
+[0m15:13:15.998548 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:13:16.003264 [debug] [MainThread]: Connection 'test.elt_snowflake_project.not_null_fct_vendas_id_transacao.23d4f1ae08' was properly closed.
+[0m15:13:16.007465 [debug] [MainThread]: Connection 'test.elt_snowflake_project.not_null_fct_vendas_receita_total.2b64f3f508' was properly closed.
+[0m15:13:16.012251 [debug] [MainThread]: Connection 'test.elt_snowflake_project.unique_fct_vendas_id_transacao.8378f4f304' was properly closed.
+[0m15:13:16.016006 [info ] [MainThread]: 
+[0m15:13:16.020899 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 4.27 seconds (4.27s).
+[0m15:13:16.026666 [debug] [MainThread]: Command end result
+[0m15:13:16.206320 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m15:13:16.224392 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m15:13:16.243286 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m15:13:16.273325 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt_project/target/run_results.json
+[0m15:13:16.277329 [info ] [MainThread]: 
+[0m15:13:16.281121 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:13:16.284622 [info ] [MainThread]: 
+[0m15:13:16.288902 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m15:13:16.293659 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 6.6477427, "process_in_blocks": "0", "process_kernel_time": 0.685229, "process_mem_max_rss": "180820", "process_out_blocks": "0", "process_user_time": 5.006206}
+[0m15:13:16.302350 [debug] [MainThread]: Command `dbt test` succeeded at 15:13:16.302017 after 6.66 seconds
+[0m15:13:16.305665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4bbb93fbc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4bbbfc3710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4bb8f38ef0>]}
+[0m15:13:16.309361 [debug] [MainThread]: Flushing usage events
+[0m15:13:16.761051 [debug] [MainThread]: An error was encountered while trying to flush usage events

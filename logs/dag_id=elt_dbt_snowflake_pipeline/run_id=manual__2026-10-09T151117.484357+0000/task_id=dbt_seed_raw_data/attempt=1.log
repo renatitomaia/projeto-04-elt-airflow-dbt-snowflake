@@ -1,0 +1,36 @@
+[2026-10-09T15:11:18.512+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-10-09T15:11:18.586+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: elt_dbt_snowflake_pipeline.dbt_seed_raw_data manual__2026-10-09T15:11:17.484357+00:00 [queued]>
+[2026-10-09T15:11:18.601+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: elt_dbt_snowflake_pipeline.dbt_seed_raw_data manual__2026-10-09T15:11:17.484357+00:00 [queued]>
+[2026-10-09T15:11:18.602+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-10-09T15:11:18.616+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): dbt_seed_raw_data> on 2026-10-09 15:11:17.484357+00:00
+[2026-10-09T15:11:18.627+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'elt_dbt_snowflake_pipeline', 'dbt_seed_raw_data', 'manual__2026-10-09T15:11:17.484357+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/elt_pipeline.py', '--cfg-path', '/tmp/tmpvtw6cuwl']
+[2026-10-09T15:11:18.634+0000] {standard_task_runner.py:91} INFO - Job 2: Subtask dbt_seed_raw_data
+[2026-10-09T15:11:18.637+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=278) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-10-09T15:11:18.640+0000] {standard_task_runner.py:64} INFO - Started process 281 to run task
+[2026-10-09T15:11:18.747+0000] {task_command.py:426} INFO - Running <TaskInstance: elt_dbt_snowflake_pipeline.dbt_seed_raw_data manual__2026-10-09T15:11:17.484357+00:00 [running]> on host a90c2c19c9b6
+[2026-10-09T15:11:18.892+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='renatomaia' AIRFLOW_CTX_DAG_ID='elt_dbt_snowflake_pipeline' AIRFLOW_CTX_TASK_ID='dbt_seed_raw_data' AIRFLOW_CTX_EXECUTION_DATE='2026-10-09T15:11:17.484357+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-10-09T15:11:17.484357+00:00'
+[2026-10-09T15:11:18.895+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-10-09T15:11:18.947+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-10-09T15:11:18.951+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/dbt_project && dbt seed --profiles-dir .']
+[2026-10-09T15:11:18.965+0000] {subprocess.py:86} INFO - Output:
+[2026-10-09T15:11:22.096+0000] {subprocess.py:93} INFO - [0m15:11:22  Running with dbt=1.12.5
+[2026-10-09T15:11:23.253+0000] {subprocess.py:93} INFO - [0m15:11:23  Registered adapter: snowflake=1.8.3
+[2026-10-09T15:11:23.355+0000] {subprocess.py:93} INFO - [0m15:11:23  Unable to do partial parsing because saved manifest not found. Starting full parse.
+[2026-10-09T15:11:25.895+0000] {subprocess.py:93} INFO - [0m15:11:25  Found 2 models, 1 seed, 3 data tests, 505 macros
+[2026-10-09T15:11:25.901+0000] {subprocess.py:93} INFO - [0m15:11:25
+[2026-10-09T15:11:25.904+0000] {subprocess.py:93} INFO - [0m15:11:25  Concurrency: 4 threads (target='dev')
+[2026-10-09T15:11:25.906+0000] {subprocess.py:93} INFO - [0m15:11:25
+[2026-10-09T15:11:32.817+0000] {subprocess.py:93} INFO - [0m15:11:32  1 of 1 START seed file ANALYTICS_raw.raw_vendas ................................ [RUN]
+[2026-10-09T15:11:36.545+0000] {subprocess.py:93} INFO - [0m15:11:36  1 of 1 OK loaded seed file ANALYTICS_raw.raw_vendas ............................ [[32mINSERT 5[0m in 3.72s]
+[2026-10-09T15:11:36.562+0000] {subprocess.py:93} INFO - [0m15:11:36
+[2026-10-09T15:11:36.564+0000] {subprocess.py:93} INFO - [0m15:11:36  Finished running 1 seed in 0 hours 0 minutes and 10.65 seconds (10.65s).
+[2026-10-09T15:11:36.868+0000] {subprocess.py:93} INFO - [0m15:11:36
+[2026-10-09T15:11:36.872+0000] {subprocess.py:93} INFO - [0m15:11:36  [32mCompleted successfully[0m
+[2026-10-09T15:11:36.876+0000] {subprocess.py:93} INFO - [0m15:11:36
+[2026-10-09T15:11:36.879+0000] {subprocess.py:93} INFO - [0m15:11:36  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[2026-10-09T15:11:37.975+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-10-09T15:11:37.978+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-10-09T15:11:38.022+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=elt_dbt_snowflake_pipeline, task_id=dbt_seed_raw_data, run_id=manual__2026-10-09T15:11:17.484357+00:00, execution_date=20261009T151117, start_date=20261009T151118, end_date=20261009T151138
+[2026-10-09T15:11:38.068+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-10-09T15:11:38.113+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-10-09T15:11:38.118+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

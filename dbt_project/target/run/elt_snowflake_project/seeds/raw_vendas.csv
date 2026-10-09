@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "ELT_DATABASE"."ANALYTICS_RAW"."RAW_VENDAS";
+    -- dbt seed --
+    
+            insert into ELT_DATABASE.ANALYTICS_raw.raw_vendas (id_transacao, data_venda, id_cliente, produto, categoria, qtd, valor_unit) values
+            (%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s)
+        
+
+;
+  

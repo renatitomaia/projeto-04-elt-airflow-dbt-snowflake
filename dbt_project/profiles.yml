@@ -1,0 +1,14 @@
+dbt_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "YGNANNB-MN92152"
+      user: "RENATITOMAIA"
+      password: "9GqxMvkqp3yczfy"
+      role: ACCOUNTADMIN                 # Ou a role com permissão criada
+      database: ELT_DATABASE
+      warehouse: ELT_WAREHOUSE
+      schema: ANALYTICS
+      threads: 4
+      client_session_keep_alive: False
